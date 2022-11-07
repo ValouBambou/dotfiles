@@ -29,8 +29,12 @@ local fmt_save = function(client, bufnr)
       group = augroup,
       buffer = bufnr,
       callback = function()
-        -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-        vim.lsp.buf.formatting_sync()
+        vim.lsp.buf.format({
+          bufnr = bufnr,
+          filter = function(clien)
+            return clien.name == "null-ls"
+        end})
+        -- for nvim 0.7 vim.lsp.buf.formatting_sync()
       end,
     })
   end

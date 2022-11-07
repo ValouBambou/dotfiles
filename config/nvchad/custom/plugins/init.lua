@@ -5,8 +5,9 @@ return {
       require "custom.plugins.lspconfig"
     end,
   },
+
   ["williamboman/mason.nvim"] = {
-   override_options = {
+    override_options = {
       ensure_installed = {
         -- lua stuff
         "lua-language-server",
@@ -27,16 +28,16 @@ return {
       },
     },
   },
+
   ["jose-elias-alvarez/null-ls.nvim"] = {
-    after =     "nvim-lspconfig",
+    after = "nvim-lspconfig",
     config = function()
       require "custom.plugins.null-ls"
     end,
   },
+
   ["goolord/alpha-nvim"] = {
     disable = false,
-    config = function()
-      require("alpha").setup(require("alpha.themes.dashboard").config)
-    end,
+    cmd = "Alpha",
   },
 }
