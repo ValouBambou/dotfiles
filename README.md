@@ -7,7 +7,7 @@ Install [nvchad](https://nvchad.com/quickstart/install#pre-requisites) with it r
 
 ## List of software with config
 
-- neovim (nvchad custom config)
+- neovim (nvchad custom config) run :PackerSync and :MasonInstall after install.
 
 ## Quick start
 
