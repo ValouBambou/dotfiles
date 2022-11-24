@@ -40,4 +40,13 @@ return {
     disable = false,
     cmd = "Alpha",
   },
+  ["tpope/vim-fugitive"] = {
+    disable = false,
+  },
+  ["nvim-treesitter/nvim-treesitter"] = {
+    config = function()
+      require "plugins.configs.treesitter"
+      require "custom.plugins.treesitter"
+    end,
+  },
 }

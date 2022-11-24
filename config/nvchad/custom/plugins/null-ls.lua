@@ -1,7 +1,6 @@
 local present, null_ls = pcall(require, "null-ls")
 
 if not present then
-  print "Cannot load null-ls"
   print 'require("null-ls") failed in null-ls.lua'
   return
 end
@@ -29,19 +28,17 @@ local fmt_save = function(client, bufnr)
       group = augroup,
       buffer = bufnr,
       callback = function()
-        vim.lsp.buf.format({
+        vim.lsp.buf.format {
           bufnr = bufnr,
           filter = function(clien)
             return clien.name == "null-ls"
-        end})
+          end,
+        }
         -- for nvim 0.7 vim.lsp.buf.formatting_sync()
       end,
     })
   end
 end
-
-print "Load null-ls"
-print 'require("null-ls") is ok'
 
 null_ls.setup {
   debug = true,
