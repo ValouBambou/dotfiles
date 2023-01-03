@@ -17,6 +17,9 @@ local sources = {
 
   -- Lua
   b.formatting.stylua,
+
+  -- C/C++
+  b.formatting.clang_format,
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})

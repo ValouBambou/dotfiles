@@ -25,6 +25,9 @@ return {
         -- shell
         "shfmt",
         "shellcheck",
+        -- C/C++
+        "clangd",
+        "clang-format",
       },
     },
   },
