@@ -911,6 +911,22 @@ content-padding = 0
 
 click-left = ~/.config/i3/rofi/bin/powermenu
 
+
+;; Source https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/popup-calendar
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/i3/polybar/popup-calendar.sh
+interval = 20.0
+click-left = ~/.config/i3/polybar/popup-calendar.sh --popup &
+
+format = <label>
+format-prefix = " "
+format-prefix-font = 2
+format-prefix-foreground = ${color.CYAN}
+format-background = ${color.BGL}
+label-font = 4
+label-foreground = ${color.CYAN}
+
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;	    __________  ______
 ;;	   / ____/ __ \/ ____/
