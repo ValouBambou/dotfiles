@@ -10,3 +10,9 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+capabilities.offsetEncoding = "utf-8"
+lspconfig.clangd.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
