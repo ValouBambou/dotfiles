@@ -15,6 +15,7 @@ return {
 
         -- web dev
         "json-lsp",
+        "prettier",
 
         -- python
         "pyright",
@@ -28,6 +29,9 @@ return {
         -- C/C++
         "clangd",
         "clang-format",
+
+        -- latex and markdown + language tool
+        "ltex-ls",
       },
     },
   },

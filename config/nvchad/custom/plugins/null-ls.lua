@@ -8,6 +8,8 @@ end
 local b = null_ls.builtins
 
 local sources = {
+  -- JS, Md, Html, CSS, Json, Yaml
+  b.formatting.prettier,
 
   -- Python
   b.formatting.black,
@@ -20,6 +22,9 @@ local sources = {
 
   -- C/C++
   b.formatting.clang_format,
+
+  -- latex
+  b.formatting.latexindent,
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
