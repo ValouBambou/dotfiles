@@ -14,7 +14,7 @@ M.treesitter = {
   indent = {
     enable = true,
     disable = {
-      "python"
+      "python",
     },
   },
 }
@@ -32,21 +32,21 @@ M.mason = {
     "deno",
     "prettier",
 
-     -- python
-     "pyright",
-     "black",
+    -- python
+    "pyright",
+    "black",
 
-     -- rust
-     "rust-analyzer",
-     -- shell
-     "shfmt",
-     "shellcheck",
-     -- C/C++
-     "clangd",
-     "clang-format",
+    -- rust
+    "rust-analyzer",
+    -- shell
+    "shfmt",
+    "shellcheck",
+    -- C/C++
+    "clangd",
+    "clang-format",
 
-     -- latex and markdown + language tool
-     "ltex-ls",
+    -- latex and markdown + language tool
+    "ltex-ls",
   },
 }
 
@@ -65,5 +65,6 @@ M.nvimtree = {
     },
   },
 }
+
 
 return M

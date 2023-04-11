@@ -47,11 +47,6 @@ local plugins = {
     end,
   },
 
-  {
-    "devanlooches/better-comments-nvim",
-    enabled = true,
-  },
-
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
