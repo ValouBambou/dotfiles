@@ -1,0 +1,6 @@
+[[language]]
+name = "python"
+auto-format = true 
+formatter = { command = "black", args = ["--quiet", "-"] }
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
+config = {} # <- this is the important line

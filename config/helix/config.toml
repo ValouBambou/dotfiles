@@ -1,0 +1,19 @@
+theme = "catppuccin_mocha"
+
+[editor]
+color-modes = true
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "version-control"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
