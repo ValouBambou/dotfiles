@@ -4,3 +4,9 @@ auto-format = true
 formatter = { command = "black", args = ["--quiet", "-"] }
 language-server = { command = "pyright-langserver", args = ["--stdio"] }
 config = {} # <- this is the important line
+
+[[language]]
+name = "c"
+formatter = { command = "clang-format" }
+auto-format = true
+
