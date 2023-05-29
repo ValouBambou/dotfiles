@@ -2,10 +2,12 @@
 Some config for various software that I use on various machines.
 
 ## Requirement
- 
-Install [nvchad](https://nvchad.com/quickstart/install#pre-requisites) with it requierements (neovim 0.7.2 or above, nerd font, ripgrep)
 
-## List of software with config
+- cli tools: `exa bat fd ripgrep` 
+- text editors: `neovim helix` 
+- wayland compositor related: `sway swayidle swaylock`
+
+## Notes 
 
 - neovim (nvchad custom config) run :PackerSync and :MasonInstall after install.
 
