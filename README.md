@@ -3,6 +3,8 @@ Some config for various software that I use on various machines.
 
 ## Requirement
 
+- python3
+- shell: `zsh oh-my-zsh zsh-autosuggestions zsh-syntax-highlighting`
 - cli tools: `exa bat fd ripgrep` 
 - text editors: `neovim helix` 
 - wayland compositor related: `sway swayidle swaylock`
