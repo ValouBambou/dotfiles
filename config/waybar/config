@@ -70,6 +70,8 @@
     "format": "{percent}% {icon}",
     "format-icons": ["","","","", "", "", ""],
     "min-length": 7,
+    "on-scroll-up": "brightnessctl set +10%",
+    "on-scroll-down": "brightnessctl set 10%-",
   },
 
   "idle_inhibitor": {
