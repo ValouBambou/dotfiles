@@ -1,0 +1,123 @@
+@import "mocha.css";
+
+* {
+  /* border: none;
+  border-radius: 0; */
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 15px;
+  min-height: 0;
+  color: @text;
+}
+
+window#waybar {
+  /* you can also GTK3 CSS functions! */
+  background-color: shade(@base, 0.9);
+  border: 2px solid alpha(@crust, 0.3);
+}
+
+#workspaces {
+  margin-right: 8px;
+  border-radius: 10px;
+  transition: none;
+  background: @surface0;
+}
+
+#workspaces button {
+  transition: none;
+  color: @surface1;
+  background: transparent;
+  padding: 5px;
+  font-size: 18px;
+}
+
+#workspaces button:hover {
+  transition: none;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  border-radius: inherit;
+  background: @lavender;
+  color: @base;
+}
+
+#workspaces button.focused {
+  background: @red;
+  color: @base;
+}
+
+#window {
+  margin-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+}
+
+#clock {
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 10px 0px 0px 10px;
+  transition: none;
+}
+
+#pulseaudio {
+  margin-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+  transition: none;
+  color: @blue;
+}
+
+#pulseaudio.muted {
+  color: @red;
+}
+
+#backlight {
+  margin-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+  transition: none;
+  color: @yellow;
+}
+
+#battery {
+  margin-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+  transition: none;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @peach;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#tray {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+  transition: none;
+}
+
+#idle_inhibitor {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+  transition: none;
+}
+
+#custom-poweroff {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+  transition: none;
+  color: @red;
+}

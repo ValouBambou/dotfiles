@@ -3,6 +3,7 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+include catppuccin-mocha
 
 ### Variables
 #
@@ -25,11 +26,13 @@ set $term foot
 ################################################################################
 
 default_border pixel 3
-client.focused          #81a1c1 #81a1c1 #81a1c1 #81a1c1 #81a1c1
-client.focused_inactive #282c34 #282c34 #282c34 #282c34 #282c34
-client.urgent           #e06c75 #e06c75 #e06c75 #e06c75 #e06c75
-client.unfocused        #282c34 #282c34 #282c34 #282c34 #282c34
 
+client.focused           $pink     $base $text  $rosewater $pink
+#client.focused_inactive  $mauve    $base $text  $rosewater $mauve
+#client.unfocused         $mauve    $base $text  $rosewater $mauve
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 gaps inner 5
 gaps outer 1
 
@@ -56,6 +59,9 @@ exec swayidle -w \
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+exec blueman-applet
+exec nm-applet --indicator
+exec mako
 
 ### Input configuration
 #
