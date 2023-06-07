@@ -9,6 +9,7 @@ Some config for various software that I use on various machines.
 - text editors: `neovim helix` 
 - wayland compositor related: `sway swayidle swaylock swaybg`
 - screenshot tools: `grim slurp swappy`
+- notifications: `mako`
 - topbar: `waybar nwg-bar(AUR) nm-applet pavucontrol brightnessctl`
 
 ## Notes 
