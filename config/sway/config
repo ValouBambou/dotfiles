@@ -37,7 +37,7 @@ gaps outer 1
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Images/Wallpapers/yunha-jung-sheo.jpg fill
+output * bg ~/Pictures/Wallpapers/Evoli/pinkfloyd.jpg fill
 #
 # Example configuration:
 #
