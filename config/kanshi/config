@@ -1,0 +1,5 @@
+profile {
+	output eDP-1 disable 
+    output DP-4 mode 1920x1080 position 1930,50 transform normal
+	output DP-5 mode 1920x1200 position 0,0 transform normal
+}
