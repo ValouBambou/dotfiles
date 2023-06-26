@@ -1,5 +1,16 @@
-profile {
+profile dock1 {
 	output eDP-1 disable 
-    output DP-4 mode 1920x1080 position 1930,50 transform normal
-	output DP-5 mode 1920x1200 position 0,0 transform normal
+    output 'Dell Inc. DELL P2412H TTMDG35D2HJU' mode 1920x1080 position 1930,50 transform normal
+	output 'Hewlett Packard HP ZR2440w CN43120C8V' mode 1920x1200 position 0,0 transform normal
+}
+
+profile tv1 {
+	output eDP-1 mode 1920x1080 position 0,0
+    output 'Hisense Electric Co., Ltd. HISENSE 0x00000001' mode 1920x1080 position 0,0 
+}
+
+profile dock2 {
+	output eDP-1 disable
+    output 'BNQ ZOWIE XL LCD A4K04396SL0' mode 1920x1080 position 0,0 transform normal
+	output 'Hewlett Packard HP S2231 3CQ102N2J3' mode 1920x1080 position 1920,0 transform normal
 }
