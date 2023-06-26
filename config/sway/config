@@ -74,8 +74,7 @@ input type:touchpad {
 }
 
 input type:keyboard {
-    xkb_options caps:escape
-    xkb_options compose:ralt
+    xkb_options  caps:escape,compose:ralt
 }
 
 # You can get the names of your inputs by running: swaymsg -t get_inputs
