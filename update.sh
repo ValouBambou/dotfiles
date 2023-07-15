@@ -6,11 +6,11 @@ if (( $# != 1 )); then
     exit 1
 fi
 
-if [ $1 = "local" ] then
+if [ $1 = "local" ]; then
     mkdir -p ~/.config 
     for dir in $(ls config)
     do
-        if [ $dir = "nvchad" ] then
+        if [ $dir = "nvchad" ]; then
             echo "Copying dotfiles/config/$dir/custom to ~/.config/nvim/lua/custom"
             cp -r config/nvchad/custom ~/.config/nvim/lua
         else 
@@ -22,10 +22,10 @@ if [ $1 = "local" ] then
 fi
 
 
-if [ $1 = "remote" ] then
+if [ $1 = "remote" ]; then
     for dir in $(ls config)
     do
-        if [ $dir = "nvchad" ] then
+        if [ $dir = "nvchad" ]; then
             echo "Copying dotfiles/config/$dir/custom from ~/.config/nvim/lua/custom"
             cp -r  ~/.config/nvim/lua/custom config/nvchad
         else 
