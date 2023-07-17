@@ -5,6 +5,7 @@ env:
 font:
   normal:
     family: "MesloLGS NF"
+  size: 12
 
 window:
   opacity: 0.9
