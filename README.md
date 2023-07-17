@@ -2,7 +2,7 @@
 
 Some config for various software that I use on various machines.
 
-## Requirement
+## Used software
 
 - python3
 - shell: `zsh oh-my-zsh zsh-autosuggestions zsh-syntax-highlighting`
@@ -16,12 +16,15 @@ Some config for various software that I use on various machines.
 
 ## Notes
 
-- neovim (nvchad custom config) run :LazySync and :MasonInstallAll after
+- neovim (nvchad custom config) run `:LazySync` and `:MasonInstallAll` after
   install.
 
 ## Quick start
 
-Simply run `./install.sh` to run the install scripts inside each directory
-inside `config/`. Those scripts will copy the configurations to the appropriate
-location on the newmachine. Optionnally scripts can install and clean stuff so
-be careful and read it they are dummy.
+Simply run `./install_all.sh` to install the required softwares (using pacman)
+and copying the config files to `$HOME/.config/`.
+
+## Update script
+
+In order to quickly update the dotfiles git repo or the local config use
+`./update.sh (local|remote)`.
