@@ -20,4 +20,6 @@ M.add = {
   NvimTreeOpenedFolderName = { fg = "green", bold = true },
 }
 
+M.add["@lsp.type.formatSpecifier.rust"] = { link = "@punctuation.special" }
+
 return M

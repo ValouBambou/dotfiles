@@ -37,7 +37,7 @@ M.mason = {
     "black",
 
     -- rust
-    "rust-analyzer",
+    -- "rust-analyzer",
     -- shell
     "shfmt",
     "shellcheck",
@@ -65,6 +65,5 @@ M.nvimtree = {
     },
   },
 }
-
 
 return M

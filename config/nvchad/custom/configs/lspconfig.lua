@@ -12,6 +12,18 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+local rust_cap = {}
+for key, value in pairs(capabilities) do
+  rust_cap[key] = value
+end
+
+table.insert(rust_cap.textDocument.semanticTokens.tokenTypes, "formatSpecifier")
+lspconfig.rust_analyzer.setup {
+  on_attach = on_attach,
+  capabilities = rust_cap,
+}
+
 capabilities.offsetEncoding = "utf-8"
 lspconfig.clangd.setup {
   on_attach = on_attach,
