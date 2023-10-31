@@ -1,6 +1,10 @@
 env:
   TERM: xterm-256color
 
+# ctrl + N to create a new window in the same directory
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
+
 # Font configuration
 font:
   normal:
