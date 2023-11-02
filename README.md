@@ -8,7 +8,7 @@ Some config for various software that I use on various machines.
 - shell: `zsh oh-my-zsh zsh-autosuggestions zsh-syntax-highlighting`
 - cli tools: `exa bat fd ripgrep`
 - text editors: `neovim helix`
-- wayland compositor related: `sway swayidle swaylock swaybg`
+- wayland compositor related: `sway swayidle swaylock swaybg wofi`
 - screenshot tools: `grim slurp swappy`
 - notifications: `mako`
 - topbar: `waybar nwg-bar(AUR) nm-applet pavucontrol brightnessctl`

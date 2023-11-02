@@ -30,6 +30,7 @@ sudo pacman -S \
     pavucontrol \
     brightnessctl \
     waybar \
+    wofi \
     kanshi \
     blueman
 
