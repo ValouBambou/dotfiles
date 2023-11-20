@@ -3,7 +3,7 @@ env:
 
 # ctrl + N to create a new window in the same directory
 key_bindings:
-  - { key: N, mods: Control, action: SpawnNewInstance }
+  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
 
 # Font configuration
 font:
