@@ -62,6 +62,8 @@ exec nm-applet --indicator
 exec mako
 exec autotiling-rs
 exec_always pkill kanshi; exec kanshi
+# for some x application i neeed polkit autostarted
+exec "/usr/libexec/polkit-gnome-authentication-agent-1"
 
 ### Input configuration
 #

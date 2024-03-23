@@ -13,4 +13,3 @@ config = {}
 name = "c"
 formatter = { command = "clang-format" }
 auto-format = true
-
