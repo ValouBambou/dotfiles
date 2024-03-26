@@ -89,6 +89,7 @@ input type:keyboard {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod++Shift+Return exec 'alacritty --config-file=/home/val/.config/alacritty/demo.toml'
 
     # select and take a screenshot
     bindsym Print exec 'grim -g "$(slurp)" - | swappy -f -'
