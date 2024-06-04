@@ -37,7 +37,7 @@ gaps outer 1
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/Wallpapers/Evoli/pinkfloyd.jpg fill
+output * bg ~/Pictures/Wallpapers/HollowKnight/bench_hollow_crystal_Peak_Upper.png fill
 #
 # Example configuration:
 #
