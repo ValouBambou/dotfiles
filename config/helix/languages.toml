@@ -1,18 +1,28 @@
-[[language]]
-name = "python"
-auto-format = true 
-formatter = { command = "black", args = ["--quiet", "-"] }
-language-servers = [{ name = "pyright"}]
+[language-server.ruff]
+command = "ruff"
+args = ["server", "-q", "--preview"]
 
 [language-server.pyright]
 command = "pyright-langserver"
-args = ["--stdio"] 
-config = {}
+args = ["--stdio"]
+
+[[language]]
+name = "python"
+auto-format = true 
+language-servers = ["pyright", "ruff"]
+formatter = { command = "ruff", args = ["format", "-" ] }
 
 [[language]]
 name = "c"
 formatter = { command = "clang-format" }
 auto-format = true
+
+
+[[language]]
+name = "cpp"
+formatter = { command = "clang-format" }
+auto-format = true
+
 
 [[language]]
 name = "javascript"

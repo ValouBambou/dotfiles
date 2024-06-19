@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# stolen from reddit
-# TODO: better formatting for window name
-# TODO: see if it is possible to also have desktop icons
-# probably not since wofi --show dmenu only got text input
 swaymsg -t get_tree | jq -r '
         # descend to workspace or scratchpad
         .nodes[].nodes[]
