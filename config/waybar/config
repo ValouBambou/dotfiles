@@ -19,7 +19,9 @@
   // https://github.com/Alexays/Waybar/wiki/Module:-Clock 
 
   "clock": {
-    "format": "{:%A %d %B   %R}  ",
+    "locale": "fr_FR.utf8",
+    "timezone": "Europe/Paris",
+    "format": "{:L%A %d %B   %R}  ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode"          : "year",

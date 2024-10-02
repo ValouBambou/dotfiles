@@ -15,6 +15,11 @@ profile tv1 {
 }
 
 profile desktop2 {
-	output eDP-1 disable
-    output 'BNQ ZOWIE XL LCD A4K04396SL0' mode 1920x1080 position 0,0 transform normal
+	output eDP-1 position 0,1090
+	output 'BNQ ZOWIE XL LCD A4K04396SL0' mode 1920x1080 position 0,0 transform normal
+}
+
+profile dock3 {
+	output eDP-1 disable 
+    output 'Dell Inc. DELL U2718Q FN84K88R0AJL' mode 2560x1440 position 0,0 transform normal
 }
