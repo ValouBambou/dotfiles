@@ -1,11 +1,11 @@
-anchor=top-center
+anchor=top-right
 sort=-time
-layer=overlay
-background-color=#7f849c
-width=600
-height=300
+layer=top
+background-color=#1e1e2e
+width=800
+height=450
 padding=10
-border-radius=15
+border-radius=0
 border-size=2
 border-color=#cba6f7
 font=JetBrainsMono NF 15
