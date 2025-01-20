@@ -65,7 +65,7 @@ exec_always pkill kanshi; exec kanshi
 # for some x application i neeed polkit autostarted
 exec "/usr/libexec/polkit-gnome-authentication-agent-1"
 # battery notification
-exec bash $path/battery.sh &
+exec_always bash ~/.config/sway/battery.sh &
 
 ### Input configuration
 #
