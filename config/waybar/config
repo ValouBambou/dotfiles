@@ -61,7 +61,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["奄", "奔", "墳"]
+            "default": ["", ""]
         },
         "on-click": "pavucontrol",
         "min-length": 13,
@@ -95,7 +95,7 @@
         "critical": 15
     },
     "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
+    "format-charging": "{capacity}% 󰂄",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
     "format-icons": ["", "", "", "", "", "", "", "", "", ""],
