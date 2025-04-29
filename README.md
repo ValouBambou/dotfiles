@@ -18,6 +18,7 @@ Some config for various software that I use on various machines.
 
 - neovim (nvchad custom config) run `:LazySync` and `:MasonInstallAll` after
   install.
+- **The neovim config is outdated**
 
 ## Quick start
 
