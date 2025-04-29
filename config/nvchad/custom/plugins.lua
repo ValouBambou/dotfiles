@@ -8,12 +8,16 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      -- format & linting
+      -- format
       {
-        "jose-elias-alvarez/null-ls.nvim",
-        config = function()
-          require "custom.configs.null-ls"
-        end,
+        'stevearc/conform.nvim',
+        opts = {
+          format_on_save = {timeout_ms = 500 },
+          formatters_by_ft = {
+            rust = {"rustfmt"},
+            python = {"ruff_format"},
+          },
+        },
       },
     },
     config = function()

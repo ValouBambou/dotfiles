@@ -17,12 +17,10 @@ name = "c"
 formatter = { command = "clang-format" }
 auto-format = true
 
-
 [[language]]
 name = "cpp"
 formatter = { command = "clang-format" }
 auto-format = true
-
 
 [[language]]
 name = "javascript"
@@ -62,3 +60,12 @@ auto-format = true
 name = "yaml"
 auto-format = true
 formatter = { command = "yamlfmt", args = ["-"] }
+
+[language-server.tinymist]
+command = "tinymist"
+
+[[language]]
+name = "typst"
+language-servers = ["tinymist"]
+auto-format = true
+formatter = { command = "typstyle" }
