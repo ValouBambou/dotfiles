@@ -66,6 +66,6 @@ command = "tinymist"
 
 [[language]]
 name = "typst"
-language-servers = ["tinymist"]
+language-servers = ["tinymist", "ltex-ls"]
 auto-format = true
-formatter = { command = "typstyle" }
+formatter = { command = "typstyle", args=["--wrap-text"] }
