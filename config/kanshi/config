@@ -15,11 +15,16 @@ profile tv1 {
 }
 
 profile desktop2 {
-	output eDP-1 position 0,1090
-	output 'BNQ ZOWIE XL LCD A4K04396SL0' mode 1920x1080 position 0,0 transform normal
+	output eDP-1 position 0,0
+	output 'BNQ ZOWIE XL LCD A4K04396SL0' mode 1920x1080 position 1920,0 transform normal
 }
 
 profile dock3 {
 	output eDP-1 disable 
-    output 'Dell Inc. DELL U2718Q FN84K88R0AJL' mode 2560x1440 position 0,0 transform normal
+    output 'Dell Inc. DELL U2412M 0FFXD38N586S' mode 1920x1080 position 0,0 transform 90
+    output 'Dell Inc. DELL U2718Q FN84K88R0AJL' mode 2560x1440 position 1080,0 transform normal
+}
+profile desktop3 {
+	output eDP-1 mode 1920x1080 position 0,1445
+	output 'Dell Inc. DELL U2520D DNK2923' mode 2560x1440 position 0,0 transform normal
 }
