@@ -17,10 +17,16 @@
 # options using:
 #     config nu --doc | nu-highlight | less -R
 
+alias py = python
 alias ll = ls -l
 alias hx = helix
 alias gst = git status
 alias gc = git commit --verbose
 alias ga = git add
+alias ggpush =  git push origin (git branch --show-current)
+alias ggpull = git pull origin (git branch --show-current)
 $env.config.buffer_editor = "helix"
 $env.EDITOR = "helix"
+
+# carapace autocomplete
+source ~/.cache/carapace/init.nu
