@@ -39,7 +39,7 @@ auto-format = false
 name = "markdown"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md" ] }
 auto-format = true
-language-servers = ["ltex-ls"]
+language-servers = ["codebook"]
 
 [[language]]
 name = "typescript"
@@ -66,6 +66,11 @@ command = "tinymist"
 
 [[language]]
 name = "typst"
-language-servers = ["tinymist", "ltex-ls"]
+language-servers = ["tinymist", "codebook"]
 auto-format = true
 formatter = { command = "typstyle", args=["--wrap-text"] }
+
+[language-server.codebook]
+command = "codebook-lsp"
+args = ["serve"]
+

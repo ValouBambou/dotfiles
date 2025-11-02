@@ -30,3 +30,4 @@ $env.EDITOR = "helix"
 
 # carapace autocomplete
 source ~/.cache/carapace/init.nu
+source $"($nu.home-path)/.cargo/env.nu"
