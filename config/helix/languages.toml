@@ -1,15 +1,18 @@
-[language-server.ruff]
-command = "ruff"
-args = ["server", "-q", "--preview"]
+# [language-server.ruff]
+# command = "ruff"
+# args = ["server", "-q", "--preview"]
 
-[language-server.pyright]
-command = "pyright-langserver"
-args = ["--stdio"]
+# [language-server.pyright]
+# command = "pyright-langserver"
+# args = ["--stdio"]
+[language-server.ty]
+command = "ty"
+args = ["server"]
 
 [[language]]
 name = "python"
 auto-format = true 
-language-servers = ["pyright", "ruff"]
+language-servers = ["ty"]
 formatter = { command = "ruff", args = ["format", "-" ] }
 
 [[language]]
